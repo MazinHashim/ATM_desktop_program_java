@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.atmBuilderController">
+   <children>
+      <AnchorPane id="pane" layoutX="1.0" layoutY="1.0" onMouseDragged="#dragged" onMousePressed="#pressed" prefHeight="700.0" prefWidth="800.0" style="-fx-background-radius: 20;" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane style="-fx-background-color: #55e47d; -fx-background-radius: 0 90 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView layoutX="40.0" layoutY="15.0">
+                     <image>
+                        <Image url="@img/atm.png" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Text fill="#c8f4d4" layoutX="14.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATM System">
+                     <font>
+                        <Font name="Bell MT Bold" size="25.0" />
+                     </font>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </Text>
+                  <VBox id="vbox" layoutX="1.0" layoutY="309.0" maxWidth="1.7976931348623157E308" prefHeight="269.0" prefWidth="200.0" stylesheets="@application.css">
+                     <children>
+                        <JFXButton fx:id="home" graphicTextGap="10.0" maxWidth="1.7976931348623157E308" onAction="#mainMenu" prefHeight="39.0" prefWidth="170.0" style="-fx-focus-color: #5bf482;" text="Home" textFill="#027921">
+                           <font>
+                              <Font name="Bell MT Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@img/home.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="admin" graphicTextGap="5.0" maxWidth="1.7976931348623157E308" onAction="#mainMenu" style="-fx-focus-color: #5bf482;" text="Admin" textFill="#027921">
+                           <font>
+                              <Font name="Bell MT Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@img/admin.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="user" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" onAction="#mainMenu" style="-fx-focus-color: #5bf482;" text="User" textFill="#027921">
+                           <font>
+                              <Font name="Bell MT Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@img/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="exit" graphicTextGap="20.0" maxWidth="1.7976931348623157E308" onAction="#mainMenu" style="-fx-focus-color: #5bf482;" text="Exit" textFill="#027921">
+                           <font>
+                              <Font name="Bell MT Bold" size="24.0" />
+                           </font>
+                           <graphic>
+                              <ImageView>
+                                 <image>
+                                    <Image url="@img/exit.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <padding>
+                              <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+                  <Pane layoutX="-8.0" layoutY="584.0" prefHeight="108.0" prefWidth="209.0">
+                     <children>
+                        <Separator layoutX="9.0" layoutY="55.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="64.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="73.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="80.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="86.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="92.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="97.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="100.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="4.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="20.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="33.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="45.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="-8.0" layoutY="194.0" prefHeight="115.0" prefWidth="209.0">
+                     <children>
+                        <Separator layoutX="9.0" layoutY="9.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="13.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="17.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="22.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="28.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="35.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="43.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="50.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="9.0" layoutY="60.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="10.0" layoutY="71.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="10.0" layoutY="84.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                        <Separator layoutX="10.0" layoutY="98.0" prefHeight="9.0" prefWidth="200.0">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Separator>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="ancorPane" layoutX="170.0" layoutY="142.0" prefHeight="489.0" prefWidth="536.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="142.0" />
+            <JFXButton fx:id="close" layoutX="750.0" layoutY="5.0" onAction="#mainMenu" prefHeight="44.0" prefWidth="25.0" style="-fx-border-radius: 50; -fx-border-color: #55e47d;" text="X" textFill="WHITE" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow height="1.0" radius="2.5" width="11.0" />
+               </effect>
+            </JFXButton>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="211.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Automated Teller Machine">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Bell MT" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="211.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="At The Moment">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Bell MT" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="211.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asynchronous Transfer Mode">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Bell MT" size="21.0" />
+               </font>
+            </Text>
+            <JFXDrawer fx:id="slider" defaultDrawerSize="200.0" prefHeight="302.0" prefWidth="0.0" AnchorPane.bottomAnchor="148.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="250.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</AnchorPane>

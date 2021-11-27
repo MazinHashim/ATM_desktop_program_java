@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane id="slide" prefHeight="331.0" prefWidth="370.0" stylesheets="@application.css">
+         <children>
+            <JFXTextField fx:id="useradm" focusColor="#48e45d" labelFloat="true" layoutX="50.0" layoutY="77.0" prefHeight="31.0" prefWidth="270.0" promptText="User Name" style="-fx-text-fill: #16b0b9; -fx-prompt-text-fill: #16b0b9;" unFocusColor="#16b0b9">
+               <font>
+                  <Font name="Californian FB" size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passadm" focusColor="#48e45d" labelFloat="true" layoutX="48.0" layoutY="148.0" prefHeight="36.0" prefWidth="270.0" promptText="Password" style="-fx-text-fill: #16b0b9; -fx-prompt-text-fill: #16b0b9;" unFocusColor="#16b0b9">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="loginadm" layoutX="141.0" layoutY="247.0" onAction="#loginAdmin" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <font>
+                  <Font name="Californian FB Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXSpinner fx:id="progressadm" layoutX="169.0" layoutY="285.0" visible="false" />
+            <JFXButton fx:id="cls" layoutX="326.0" layoutY="6.0" onAction="#closeAction" ripplerFill="WHITE" style="-fx-border-color: #0d9001; -fx-border-radius: 20;" text="X">
+               <font>
+                  <Font name="Book Antiqua Bold" size="17.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.4761904761904762" radius="0.5">
+                     <stops>
+                        <Stop color="#074f00" />
+                        <Stop color="#04ff00" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </JFXButton>
+            <ImageView layoutX="17.0" layoutY="82.0">
+               <image>
+                  <Image url="@img/loguser.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="17.0" layoutY="154.0">
+               <image>
+                  <Image url="@img/logpasss.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</StackPane>

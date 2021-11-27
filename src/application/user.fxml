@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="558.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userController">
+   <children>
+      <JFXTabPane layoutX="54.0" layoutY="118.0" prefHeight="558.0" prefWidth="547.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Deposit Money">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="110.0" layoutY="71.0" prefHeight="382.0" prefWidth="382.0" style="-fx-background-color: #48e45d; -fx-background-radius: 20;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <Pane layoutX="24.0" layoutY="25.0" prefHeight="332.0" prefWidth="335.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 20;">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <children>
+                                    <Text fill="WHITE" layoutX="28.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter An Amount">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="destext" focusColor="#48e45d" layoutX="28.0" layoutY="92.0" prefHeight="25.0" prefWidth="278.0" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="desposit" layoutX="207.0" layoutY="193.0" onAction="#UserAction" style="-fx-background-color: #48e45d; -fx-background-radius: 10;" text="Desposit" textFill="WHITE">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="desmess" layoutX="28.0" layoutY="266.0" textFill="#3300ff" visible="false">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Withdraw Money">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="110.0" layoutY="71.0" prefHeight="382.0" prefWidth="382.0" style="-fx-background-color: #48e45d; -fx-background-radius: 20;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <Pane layoutX="24.0" layoutY="25.0" prefHeight="332.0" prefWidth="335.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 20;">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <children>
+                                    <Text fill="WHITE" layoutX="28.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter An Amount">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="25.0" />
+                                       </font>
+                                    </Text>
+                                    <JFXTextField fx:id="withtext" focusColor="#48e45d" layoutX="28.0" layoutY="92.0" prefHeight="25.0" prefWidth="278.0" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="withdraw" layoutX="200.0" layoutY="193.0" onAction="#UserAction" style="-fx-background-color: #48e45d; -fx-background-radius: 10;" text="Withdraw" textFill="WHITE">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="withmess" layoutX="28.0" layoutY="266.0" textFill="#3300ff" visible="false">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Balance Transfer">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="110.0" layoutY="28.0" prefHeight="425.0" prefWidth="382.0" style="-fx-background-color: #48e45d; -fx-background-radius: 20;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <Pane layoutX="24.0" layoutY="24.0" prefHeight="387.0" prefWidth="335.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 20;">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <children>
+                                    <JFXTextField fx:id="recev" focusColor="#48e45d" labelFloat="true" layoutX="29.0" layoutY="32.0" prefHeight="25.0" prefWidth="278.0" promptText="Receiver Id" style="-fx-prompt-text-fill: rgba(255,255,255,0.5);" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="transfer" layoutX="200.0" layoutY="277.0" onAction="#UserAction" style="-fx-background-color: #48e45d; -fx-background-radius: 10;" text="Transfer" textFill="WHITE">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="tranmess" layoutX="29.0" layoutY="338.0" textFill="#3300ff" visible="false">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="amountran" focusColor="#48e45d" labelFloat="true" layoutX="29.0" layoutY="112.0" prefHeight="25.0" prefWidth="278.0" promptText="Amount" style="-fx-prompt-text-fill: rgba(255,255,255,0.5);" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="repass" focusColor="#48e45d" labelFloat="true" layoutX="29.0" layoutY="191.0" prefHeight="25.0" prefWidth="283.0" promptText="Retype Password" style="-fx-prompt-text-fill: rgba(255,255,255,0.5);" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Check Balance">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="159.0" layoutY="130.0" prefHeight="263.0" prefWidth="284.0" style="-fx-background-color: #48e45d; -fx-background-radius: 20;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <Pane layoutX="20.0" layoutY="16.0" prefHeight="232.0" prefWidth="245.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 20;">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <children>
+                                    <Text fill="WHITE" layoutX="20.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Balance">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Label id="balan" fx:id="checkBalan" layoutX="70.0" layoutY="114.0" stylesheets="@application.css" textFill="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="29.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets left="20.0" right="20.0" />
+                                       </padding>
+                                    </Label>
+                                    <JFXButton fx:id="ref" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="118.0" onAction="#UserAction" prefHeight="32.0" prefWidth="22.0" style="-fx-border-color: #48e45d; -fx-border-radius: 10;">
+                                       <graphic>
+                                          <ImageView fitHeight="24.0" fitWidth="24.0">
+                                             <image>
+                                                <Image url="@img/refresh.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </JFXButton>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Infromation">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="load" layoutX="156.0" layoutY="447.0" onAction="#UserAction" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 15;" text="Load" textFill="WHITE">
+                           <font>
+                              <Font name="Californian FB Bold" size="20.0" />
+                           </font>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </JFXButton>
+                        <JFXTextField fx:id="fullname" editable="false" focusColor="#48e45d" labelFloat="true" layoutX="156.0" layoutY="86.0" prefHeight="25.0" prefWidth="290.0" promptText="Full Name" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="username" editable="false" focusColor="#48e45d" labelFloat="true" layoutX="156.0" layoutY="142.0" prefHeight="25.0" prefWidth="290.0" promptText="User Name" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="password" editable="false" focusColor="#48e45d" labelFloat="true" layoutX="156.0" layoutY="201.0" prefHeight="25.0" prefWidth="290.0" promptText="Password" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="balance" editable="false" focusColor="#48e45d" labelFloat="true" layoutX="156.0" layoutY="258.0" prefHeight="25.0" prefWidth="290.0" promptText="Balance" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="phone" editable="false" focusColor="#48e45d" labelFloat="true" layoutX="156.0" layoutY="314.0" prefHeight="25.0" prefWidth="290.0" promptText="Phone" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="city" editable="false" focusColor="#48e45d" labelFloat="true" layoutX="156.0" layoutY="377.0" prefHeight="25.0" prefWidth="290.0" promptText="City" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Change Password">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="110.0" layoutY="49.0" prefHeight="425.0" prefWidth="382.0" style="-fx-background-color: #48e45d; -fx-background-radius: 20;">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                           <children>
+                              <Pane layoutX="24.0" layoutY="24.0" prefHeight="387.0" prefWidth="335.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 20;">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <children>
+                                    <JFXTextField fx:id="oldpass" focusColor="#48e45d" labelFloat="true" layoutX="29.0" layoutY="32.0" prefHeight="25.0" prefWidth="278.0" promptText="Password" style="-fx-prompt-text-fill: rgba(255,255,255,0.5);" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="change" layoutX="200.0" layoutY="277.0" onAction="#UserAction" style="-fx-background-color: #48e45d; -fx-background-radius: 10;" text="Change" textFill="WHITE">
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label fx:id="changmess" layoutX="29.0" layoutY="338.0" textFill="#3300ff" visible="false">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXPasswordField fx:id="newpass" focusColor="#48e45d" labelFloat="true" layoutX="29.0" layoutY="191.0" prefHeight="25.0" prefWidth="283.0" promptText="Confirm Password" style="-fx-prompt-text-fill: rgba(255,255,255,0.5);" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                    <JFXPasswordField fx:id="confirm" focusColor="#48e45d" labelFloat="true" layoutX="29.0" layoutY="112.0" prefHeight="25.0" prefWidth="283.0" promptText="New Password" style="-fx-prompt-text-fill: rgba(255,255,255,0.5);" unFocusColor="WHITE">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="22.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <AnchorPane layoutX="5.0" prefHeight="558.0" prefWidth="52.0" style="-fx-background-color: white; -fx-background-radius: 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="546.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <JFXButton fx:id="setting" contentDisplay="GRAPHIC_ONLY" layoutX="-1.0" layoutY="1.0" onAction="#UserAction" prefHeight="33.0" prefWidth="52.0" style="-fx-background-color: #16b0b9;" textFill="#9ffdff" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <graphic>
+                  <ImageView>
+                     <image>
+                        <Image url="@../../../../../AppData/Local/Temp/icons8_Settings_24px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </JFXButton>
+            <Pane fx:id="settpane" layoutY="40.0" prefHeight="96.0" prefWidth="52.0" style="-fx-background-color: #16b0b9;" visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0">
+               <children>
+                  <JFXButton fx:id="resh" contentDisplay="GRAPHIC_ONLY" layoutX="4.0" layoutY="9.0" onAction="#UserAction" prefHeight="25.0" prefWidth="44.0" textFill="#9ffdff">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0">
+                           <image>
+                              <Image url="@img/ref.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="logout" contentDisplay="GRAPHIC_ONLY" layoutX="6.0" layoutY="52.0" onAction="#UserAction" textFill="#9ffdff">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@img/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="558.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.adminController">
+   <children>
+      <JFXTabPane layoutX="249.0" layoutY="118.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="Create Account">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="user" focusColor="#16b0b9" labelFloat="true" layoutX="155.0" layoutY="179.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="292.0" promptText="User Name" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="pass" focusColor="#16b0b9" labelFloat="true" layoutX="155.0" layoutY="233.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="292.0" promptText="Password" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <JFXTextField fx:id="frist" focusColor="#16b0b9" labelFloat="true" layoutX="155.0" layoutY="77.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="292.0" promptText="Frist Name" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="last" focusColor="#16b0b9" labelFloat="true" layoutX="155.0" layoutY="127.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="292.0" promptText="Last Name" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="phone" focusColor="#16b0b9" labelFloat="true" layoutX="155.0" layoutY="334.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="292.0" promptText="Phone Number" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="city" focusColor="#16b0b9" labelFloat="true" layoutX="153.0" layoutY="389.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="294.0" promptText="City" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="addButton" layoutX="153.0" layoutY="452.0" onAction="#AdminAction" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: #16b0b9;" text="Add Account" textFill="WHITE">
+                           <font>
+                              <Font name="Californian FB Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="idtext" editable="false" focusColor="#48e45d" labelFloat="true" layoutX="153.0" layoutY="25.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="292.0" promptText="Id Number" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label fx:id="lab" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="75.0" layoutY="27.0" prefHeight="22.0" prefWidth="60.0" text="2015+" textFill="#ababab">
+                           <font>
+                              <Font name="Californian FB Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="message" layoutX="559.0" layoutY="20.0" textFill="#10d3d7">
+                           <font>
+                              <Font name="Californian FB Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="balance" focusColor="#16b0b9" labelFloat="true" layoutX="155.0" layoutY="283.0" onAction="#AdminAction" prefHeight="26.0" prefWidth="294.0" promptText="Balance" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Update Account">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="userUp" focusColor="#16b0b9" layoutX="156.0" layoutY="191.0" prefHeight="26.0" prefWidth="292.0" promptText="User Name" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="fristUp" focusColor="#16b0b9" layoutX="156.0" layoutY="84.0" prefHeight="26.0" prefWidth="292.0" promptText="Frist Name" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="lastUp" focusColor="#16b0b9" layoutX="156.0" layoutY="137.0" prefHeight="26.0" prefWidth="292.0" promptText="Last Name" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="phoneUp" focusColor="#16b0b9" layoutX="156.0" layoutY="298.0" prefHeight="26.0" prefWidth="292.0" promptText="Phone Number" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField fx:id="cityUp" focusColor="#16b0b9" layoutX="154.0" layoutY="350.0" prefHeight="26.0" prefWidth="294.0" promptText="City" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton fx:id="updButton" disable="true" layoutX="154.0" layoutY="445.0" onAction="#AdminAction" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: #16b0b9;" text="Update Acount" textFill="WHITE">
+                           <font>
+                              <Font name="Californian FB Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="idupd" focusColor="#16b0b9" labelFloat="true" layoutX="331.0" layoutY="451.0" onAction="#getAccont" prefHeight="26.0" prefWidth="118.0" promptText="Id Number" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <Label fx:id="messageUp" layoutX="559.0" layoutY="28.0" textFill="#10d3d7">
+                           <font>
+                              <Font name="Californian FB Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="balanceUp" focusColor="#16b0b9" layoutX="155.0" layoutY="246.0" prefHeight="26.0" prefWidth="292.0" promptText="Balance" unFocusColor="#48e45d">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab closable="false" text="Delete Account">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="delButton" layoutX="154.0" layoutY="445.0" onAction="#AdminAction" prefHeight="37.0" prefWidth="159.0" style="-fx-background-color: #16b0b9;" text="delete Account" textFill="WHITE">
+                           <font>
+                              <Font name="Californian FB Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXTextField fx:id="iddel" focusColor="#16b0b9" labelFloat="true" layoutX="325.0" layoutY="451.0" prefHeight="26.0" prefWidth="123.0" promptText="Id Number" unFocusColor="#16b0b9">
+                           <font>
+                              <Font name="Californian FB Bold" size="15.0" />
+                           </font>
+                        </JFXTextField>
+                        <Pane layoutX="122.0" layoutY="78.0" prefHeight="310.0" prefWidth="382.0" style="-fx-background-color: #48e45d; -fx-background-radius: 20;">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <children>
+                              <Pane layoutX="26.0" layoutY="18.0" prefHeight="274.0" prefWidth="330.0" style="-fx-background-color: #16b0b9; -fx-background-radius: 20;">
+                                 <effect>
+                                    <DropShadow />
+                                 </effect>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <children>
+                                    <Text fill="WHITE" layoutX="81.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Account Of " wrappingWidth="174.13671875">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="55.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Has Been Deleted" wrappingWidth="225.13671875">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Label fx:id="delmessage" alignment="CENTER" layoutX="6.0" layoutY="113.0" prefHeight="35.0" prefWidth="315.0" textFill="#0e25d3">
+                                       <font>
+                                          <Font name="Californian FB Bold" size="29.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+   </children>
+</AnchorPane>

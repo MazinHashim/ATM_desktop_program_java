@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-background-color:  transparent;
+}
+#vbox JFXButton:hover{
+	-fx-background-color:  #5bf482;
+}
+#pane{
+	-fx-background-color: linear-gradient(#5bf482, #ffffff ) ;
+}
+#hom{
+	-fx-background-color: linear-gradient(#ffffff,  #55e47d) ;
+}
+#slide{
+	-fx-background-color:
+            linear-gradient(#fcfcfc, #55e47d);
+    -fx-background-radius: 6,5;
+    -fx-background-insets: 0,1;
+}
+#balan:hover{
+	-fx-text-fill: blue;
+	-fx-border-color: blue;
+	-fx-border-width: 4;
+	-fx-scale-x: 1.1;
+	-fx-scale-y: 1.1;
+}

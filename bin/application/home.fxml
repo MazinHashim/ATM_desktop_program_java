@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="hom" prefHeight="558.0" prefWidth="601.0" style="-fx-background-radius: 0 0 20 0;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homeController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="88.0" layoutX="499.0" layoutY="44.0">
+         <image>
+            <Image url="@img/images%20(30).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cash" layoutX="519.0" layoutY="97.0">
+         <image>
+            <Image url="@img/money.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Text fill="#c8f4d4" layoutX="161.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wellcome To ATM">
+         <font>
+            <Font name="Bodoni MT Bold" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Text>
+      <ImageView fx:id="cenimg" layoutX="253.0" layoutY="36.0">
+         <image>
+            <Image url="@img/atm.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>
